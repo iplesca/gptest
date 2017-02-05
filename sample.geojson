@@ -1,0 +1,24 @@
+{
+    "type": "FeatureCollection",
+    "features" : [{
+        "type": "Feature",
+        "properties": {
+            "name": "Guinness Storehouse",
+            "address": "St James's Gate, Ushers, Dublin 8"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-6.2889,53.3418392]
+        }
+    }, {
+        "type": "Feature",
+        "properties": {
+            "name": "Ha'penny Bridge",
+            "address": "Bachelors Walk, North City, Dublin"
+        },
+        "geometry": {
+            "type": "Point",
+            "coordinates": [-6.265285,53.3464352]
+        }
+    }]
+}
