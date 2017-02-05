@@ -1,4 +1,5 @@
 # GeoPal test
+Prototype application to work with Google Maps API.
 
 ## Installation
 Simply clone/download this repo into any PHP-serving server configuration
