@@ -203,7 +203,7 @@ define(['jquery', 'googlemaps', 'jquery-ui', 'formdata', 'colorpicker'], functio
                  * @returns {$}
                  */
                 generateSelectionResults : function (data) {
-                    var content = $('<table class="selectionResults">');
+                    var content = $('<table class="dialog selectionResults">');
                     var row = $('<tr>')
                             .append($('<th>').text('Address'))
                             .append($('<th>').text('Latitude'))
@@ -218,7 +218,7 @@ define(['jquery', 'googlemaps', 'jquery-ui', 'formdata', 'colorpicker'], functio
                         content.append(row);
                     });
                     
-                    return content;
+                    return $('<div class="dialog_overflow">').append(content);
                 },
                 /**
                  * @description Generates content to fit a Data.InfoWindow
@@ -477,6 +477,7 @@ define(['jquery', 'googlemaps', 'jquery-ui', 'formdata', 'colorpicker'], functio
                         title : me.options.labels.titles.selectionResults,
                         modal : true,
                         width : 800,
+                        height : 'auto',
                         minHeight: 200,
                         maxHeight: 800,
                         close : function () {

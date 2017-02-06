@@ -33,3 +33,7 @@ body {
 .selectionResults {
     width:100% !important;
 }
+.dialog {
+    max-height: 85%;
+    overflow: auto;
+}
