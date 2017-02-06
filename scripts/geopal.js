@@ -318,10 +318,9 @@ define(['jquery', 'googlemaps', 'jquery-ui', 'formdata', 'colorpicker'], functio
                  */
                 loadData : function (data) {
                     try {
-                        map.enableLassoMode()
-                        var ok = map.object.data.addGeoJson(data);
+                        map.object.data.addGeoJson(data);
                     } catch (error) {
-                        dialogs.error('Data is ' + error.message);
+                        dialogs.error(error.message);
                     }
                 },
                 /**
@@ -482,6 +481,7 @@ define(['jquery', 'googlemaps', 'jquery-ui', 'formdata', 'colorpicker'], functio
                         maxHeight: 800,
                         close : function () {
                             map.clearSelection();
+                            map.disableLassoMode();
                         }
                     });
                     return modal;
