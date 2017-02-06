@@ -2,7 +2,7 @@
 Prototype application to work with Google Maps API.
 
 ## Installation
-Simply clone/download this repo into any PHP-serving server configuration
+Simply clone/download this repo into any PHP (5.5+) server configuration
 
 ## How to use
 The `Selection tool` can be canceled by *right-click*. 
@@ -38,4 +38,4 @@ This content was used in testing the application (file included in the repo)
 
 ```
 ## Notes
-The `InfoWindow` popup will display the sample data **properties** only.
+The `InfoWindow` popup will display the **sample data** properties only (name, address).
